@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Technical test React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> For confidentiality reasons, please do not fork this repository from GitHub. Create a new private repository on your account.
 
-## Available Scripts
+Hi 👋
+---
 
-In the project directory, you can run:
+This is an exercice about React.
 
-### `yarn start`
+Thank you for taking the time to make it. We appreciate it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Goals
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This exercise is the occasion for you to
 
-### `yarn test`
+- Give us an overview of your **thinking**
+- Demonstrate the **redability** of your code
+- Maybe learn tools you don't know yet
+- Have this work as a support to discuss technical topics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting started
 
-### `yarn build`
+This project uses create-react-app. Detailled documentation is available on [REACT.md](./REACT.md) or on the [CRA website](https://create-react-app.dev/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install yarn
+1. Run `yarn install` to get your dependencies installed
+1. Run `yarn start` to run the app in development mode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You should get the frontend app on http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Work to do
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We'd like you to create an app that lists all the public holidays around the world.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To do that, you will request the [free Nager Date API](https://date.nager.at/API). Its Swagger documentation is available [here](https://date.nager.at/swagger/index.html).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Using React hooks and the Nager API, you will create the following two pages.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Any improvement (pagination, offline support, UX, tests...) will be welcomed, even if it is not required.
 
-## Learn More
+### List the holidays for one year on one country (/holidays/{countrycode}/{year})
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This page will list all the holidays in a country for a given year.
+It will also include a filtering form to select a new country or a new year.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![](./PageHolidays.png)
+
+### List the available countries (/countries)
+
+This page will show in a table all the countries supported by the API.
+
+![](./PageCountries.png)
+
+## Any question ?
+
+If some points aren't clear to you, no worries we can have a quick chat.
+Send me an email at maxime@scoppe.fr.
+
+## When you're done
+
+Share your repository with @maximelebastard on GitHub and drop an email to maxime@scoppe.fr.
